@@ -1,7 +1,7 @@
 .main{
   max-width: 1200px;
   margin: auto;
-  padding: 120px;
+  padding: 120px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 70px;
@@ -33,4 +33,17 @@
 .main-texto{
   margin-top: 60px;
  font-weight: 400 ;
+}
+@media (max-width: 1120px) {
+  .main-img{
+    grid-row: 2;
+  }
+  .main{
+    grid-template-columns: 1fr;
+    padding: 40px 40px;
+    box-sizing: border-box;
+  }
+  .main-titulo{
+    font-size: 3rem;
+  }
 }
