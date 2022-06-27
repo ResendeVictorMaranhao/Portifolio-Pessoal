@@ -1,0 +1,22 @@
+header{
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
+}
+.menu{
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-header{
+  display: flex;
+  flex-wrap:wrap ;
+  gap: 10px;
+}
+.menu li a{
+  font-size: 1.1rem;
+  color: #2D0303;
+  font-size: 1.125rem;
+  padding: 10px 20px;
+}
