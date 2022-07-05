@@ -1,34 +1,45 @@
+:root{
+  --titulo1: 4rem; 
+  --titulo1-1:3rem;
+  --texto1: 1.5rem;
+  --texto2: 1rem;
+  --cor-primaria: #0f0101;
+  --gap2:20px;
+  --tipo: 'Poppins', sans-serif;
+  --cor-texto:#604C4C;
+  --alturaL1:1.5rem;
+}
 .main{
   max-width: 1200px;
   margin: auto;
   padding: 120px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 70px;
+  gap: 160px;
 }
 .main-conteudo{
   display:flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--gap2);
 }
 .main-titulo{
-  font-size: 4rem;
+  font-size: var(--titulo1);
   line-height: 1.1;
-  color: #2D0303;
-  font-family: 'Poppins', sans-serif;
+  color: var(--cor-primaria);
+  font-family: var(--tipo);
 }
 .main-subtitulo, .main-texto{
-  font-size: 1.5rem;
+  font-size: var(--texto1);
   font-weight: 500;
-  color: #604C4C;
-  line-height: 1.5;
+  color: var(--cor-texto);
+  line-height: var(--alturaL1);
   
 }
 
 .main-localicao{
-  font-size: 1rem;
+  font-size: var(--texto2);
   font-weight: 400;
-  color: #604C4C
+  color: var(--cor-texto);
 }
 .main-texto{
   margin-top: 60px;
@@ -44,6 +55,6 @@
     box-sizing: border-box;
   }
   .main-titulo{
-    font-size: 3rem;
+    font-size: var(--titulo1-1);
   }
 }
